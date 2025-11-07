@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DEV BOYS PG Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+    }
+    form {
+      background-color: white;
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid #0078d7;
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+      color: #0078d7;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 12px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+<form action="https://formspree.io/f/yourformid" method="POST">
+  <h2>DEV BOYS PG Admission Form</h2>
+
+  <label>Full Name:</label>
+  <input type="text" name="name" required>
+
+  <label>Mobile Number:</label>
+  <input type="tel" name="phone" required>
+
+  <label>Email:</label>
+  <input type="email" name="email">
+
+  <label>Room Type:</label>
+  <select name="room_type">
+    <option>Single Room</option>
+    <option>Double Sharing</option>
+    <option>Triple Sharing</option>
+    <option>Four Seater Sharing</option>
+  </select>
+
+  <label>Message:</label>
+  <textarea name="message" rows="3"></textarea>
+
+  <button type="submit">Submit Form</button>
+</form>
+
+</body>
+</html>
